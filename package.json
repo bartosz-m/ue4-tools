@@ -1,0 +1,38 @@
+{
+  "name": "ue4-tools",
+  "main": "./lib/index.js",
+  "version": "0.0.1",
+  "description": "Code completion for Unreal Engine 4 projects",
+  "keywords": ["c++", "completion","ue4", "unreal"],
+  "scripts": {
+    "build": "node -r livescript-transform-esm/register/cjs dev/build"
+  },
+  "activationCommands": {},
+  "author": "Bartosz Matuszewski <bartosz.wojciech.matuszewski@gmail.com>",
+  "repository": "https://github.com/atom/ue4-tools",
+  "license": "BSD-3-Clause",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "consumedServices": {
+    "project-manager": {
+      "description": "Get access to all saved projects",
+      "versions": {
+        "3.1.0": "consumeProjects"
+      }
+    }
+  },
+  "dependencies": {
+    "cson": "^5.1.0",
+    "fs-extra": "^6.0.1"
+  },
+  "devDependencies": {
+    "livescript": "git+https://github.com/gkz/LiveScript.git",
+    "livescript-system": "0.0.13",
+    "livescript-transform-esm": "^3.0.0",
+    "livescript-transform-implicit-async": "^1.0.9",
+    "livescript-transform-object-create": "^1.0.8",
+    "livescript-transform-top-level-await": "^1.1.1"
+  },
+  "package-deps": ["atom-clang", "project-manager"]
+}

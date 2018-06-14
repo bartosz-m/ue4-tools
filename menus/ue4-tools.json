@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "UE4 Tools",
+          "submenu": [
+            {
+              "label": "Import vscode settings",
+              "command": "ue4-tools:import-vscode-settings"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
