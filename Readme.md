@@ -1,7 +1,10 @@
 # UE4 Tools
 
 Code completion for Unreal Engine 4 projects.
+
 ![screenshot](https://github.com/bartosz-m/ue4-tools/raw/master/doc/images/screenshot.gif)
+
+This package imports settings from vscode and apply them to [atom-clang](https://atom.io/packages/atom-clang) and  [project-manger](https://atom.io/packages/project-manager)
 
 ## Requirements
 * UE4 v4.18 or greater (for support of vscode)
